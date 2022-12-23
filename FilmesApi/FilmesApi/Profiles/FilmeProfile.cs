@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FilmesApi.Profiles
 {
@@ -12,9 +8,9 @@ namespace FilmesApi.Profiles
     {
         public FilmeProfile()
         {
-            CreateMap<CreateFilmeDto, Filme>();
-            CreateMap<Filme, ReadFilmeDto>();
-            CreateMap<UpdateFilmeDto, Filme>();
+            _ = CreateMap<CreateFilmeDto, Filme>();
+            _ = CreateMap<Filme, ReadFilmeDto>();
+            _ = CreateMap<UpdateFilmeDto, Filme>();
         }
     }
 }

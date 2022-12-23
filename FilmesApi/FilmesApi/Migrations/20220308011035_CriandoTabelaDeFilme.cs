@@ -7,7 +7,7 @@ namespace FilmesApi.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+            _ = migrationBuilder.CreateTable(
                 name: "Filmes",
                 columns: table => new
                 {
@@ -20,13 +20,13 @@ namespace FilmesApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Filmes", x => x.Id);
+                    _ = table.PrimaryKey("PK_Filmes", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
+            _ = migrationBuilder.DropTable(
                 name: "Filmes");
         }
     }
